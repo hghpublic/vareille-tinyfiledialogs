@@ -6,12 +6,12 @@
 
 clang -c ../tinyfiledialogs.c
 
-if [ `uname -s` = "Darwin" ]; then
+if [ "$(uname -s)" = "Darwin" ]; then
  echo Darwin
- if  [ `uname -m` = "x86_64" ]; then
+ if  [ "$(uname -m)" = "x86_64" ]; then
   echo x86_64
   clang -dynamiclib tinyfiledialogs.o -o tinyfiledialogsIntel.dylib
- elif [ `uname -m` = "arm64" ]; then
+ elif [ "$(uname -m)" = "arm64" ]; then
   echo arm64
   clang -dynamiclib tinyfiledialogs.o -o tinyfiledialogsAppleSilicon.dylib
  fi
