@@ -1,0 +1,3 @@
+= tinyfiledialogs demo
+
+This is a demo of the tinyfiledialogs library.
