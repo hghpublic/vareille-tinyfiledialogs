@@ -7,7 +7,7 @@ Copyright (c) 2014 - 2025 Guillaume Vareille http://ysengrin.com
 
 ********* TINY FILE DIALOGS OFFICIAL WEBSITE IS ON SOURCEFORGE *********
   _________
- /         \ hello.c v3.21.2 [Oct 25, 2025]
+ /         \ hello.c v3.21.3 [Feb 12, 2026]
  |tiny file| Hello World file created [November 9, 2014]
  | dialogs |
  \____  ___/ http://tinyfiledialogs.sourceforge.net
@@ -90,7 +90,7 @@ int main( int argc , char * argv[] )
 	unsigned char lRgbColor[3];
 	FILE * lIn;
 	char lBuffer[1024];
-	char const * lFilterPatterns[2] = { "*.txt", "*.text" };
+	char const * lFilterPatterns[2] = { "*.txt", "*.json" };
 
 	(void)argv; /*to silence stupid visual studio warning*/
 
